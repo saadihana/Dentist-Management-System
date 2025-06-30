@@ -1,0 +1,110 @@
+
+body {
+  font-family: 'Arial', sans-serif; 
+}
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.calendar-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.calendar-header button:hover {
+  background-color: #45a049;
+}
+
+.interval-buttons button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.interval-buttons button:hover {
+  background-color: #0b7dda;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.calendar-table th {
+  background-color: #f2f2f2;
+}
+
+.calendar-table td {
+  background-color: #f9f9f9;
+}
+
+.calendar-table td:hover {
+  background-color: #f1f1f1;
+}

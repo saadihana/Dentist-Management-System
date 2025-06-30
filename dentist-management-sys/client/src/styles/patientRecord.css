@@ -1,0 +1,277 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa ;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin-left: 8%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.consultation-form > .form-title {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #007bff;
+}
+
+
+
+.content-wrapper {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.header-content {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.header-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  margin: 0;
+}
+
+.new-consultation-btn {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.new-consultation-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.new-consultation-btn {
+  margin-left: auto; /* Align to the right */
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+}
+
+.patient-info {
+  margin-bottom: 30px;
+}
+
+.patient-info-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #007bff;
+  
+}
+
+.patient-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+}
+
+
+.input-group label {
+  font-weight:bolder;
+  font-size: 10px;
+   display: block; 
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Consultation Form */
+.consultation-form {
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.form-input,
+.form-textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-textarea:focus,
+.form-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Table */
+.table-container {
+  margin-top: 30px;
+  width: 100%;
+
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.table-title {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.table-wrapper {
+  width: 100%;;
+  height: auto;
+  
+
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e9ecef;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.table th {
+  background-color: #f1f3f5;
+  color: #333;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.table tr:hover {
+  background-color: #e9ecef;
+  transition: background-color 0.2s;
+}
+
+/* Error and Loading States */
+.error {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.loading {
+  font-size: 14px;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-content >.table-container {
+  width: 100%;
+  margin: 0px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 38vh;
+  overflow-y: auto;
+  position: relative;
+  justify-content: space-around;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patient-info-grid >.input-group {
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+
+.patient-info-grid >.input-group >.input-naissance{
+
+  gap:220px;
+}
+
+
+.descr{
+margin-top: 30px;
+}
+
+.form-input{
+  width: 80%;
+}

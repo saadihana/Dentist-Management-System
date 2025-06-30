@@ -1,0 +1,34 @@
+.sideBar{
+    max-width:  15vw;
+    min-width:  12vw;
+    min-height: 96vh;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sideBar-item{
+    display: flex;
+    margin: 2vh 1vw;
+    /* text-align: center; */
+}
+
+.sideBar-item p{
+    margin: 0 1vw;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    color: black;
+    list-style: none;
+}
+
+.separator{
+    color: blue;
+}
+
+#photo{
+    width: 12vw;
+    height: 28vh;
+}

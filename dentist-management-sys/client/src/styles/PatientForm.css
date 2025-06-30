@@ -1,0 +1,279 @@
+/* General App Styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #e8f4f8, #d0e8f2);
+  width: 100vw;
+  height: 100vh;
+  padding-left: 0px;
+  padding: 20px;
+  overflow-y: auto;
+}
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  height: 85px;
+  padding: 0 20px;
+  background-color: white;
+  color: #0066ba;
+  font-size: 0.9rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for clarity */
+}
+
+.logo {
+  width: 60px;
+  height: 100px;
+  margin-right: 15px;
+}
+
+/* Main Content Styles */
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 75%;
+  max-width: 1200px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background: #ffffffee;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 90px;
+}
+
+/* Form Styles */
+.patient-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-group.sex-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.Input-Dossier {
+  flex: 1;
+}
+
+.Sex-Input {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+.form-control, .Input-Dossier, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+.form-control:focus, .Input-Dossier:focus, textarea:focus {
+  border-color: #0066ba;
+  box-shadow: 0px 0px 5px rgba(0, 102, 186, 0.5);
+}
+
+/* Buttons Container Styles */
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 20%;
+  margin-left: 20px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.validate-button {
+  background-color: #0066ba;
+  color: white;
+  width: 100px;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+  width: 100px;
+}
+
+.print-button {
+  background-color: #0066ba;
+  color: white;
+  width: 100px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section */
+.Image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeInImage 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e8f4f8;
+  color: #0066ba;
+}
+
+
+/* Print Styles */
+@media print {
+  /* Hide buttons and non-essential elements */
+  .form-buttons, .header, .logo {
+    display: none !important;
+  }
+
+  /* Layout adjustments for print */
+  .patient-form {
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    padding: 20px;
+    background: white;
+  }
+
+  .form-group {
+    page-break-inside: avoid;
+    margin-bottom: 10px;
+  }
+
+  .form-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  /* Fonts and spacing for print clarity */
+  label {
+    font-size: 1rem;
+    color: #000;
+  }
+
+  .form-control, .Input-Dossier, textarea {
+    font-size: 1rem;
+    color: #0066ba;
+    background: none;
+    border: none;
+    padding: 5px;
+  }
+
+  /* Ensure proper spacing for sections */
+  .form-section h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #333;
+    font-weight: bolder;
+  }
+
+  /* Avoid breaking form sections across pages */
+  .form-section, .form-group {
+    page-break-inside: avoid;
+  }
+
+  /* Overall page adjustments */
+  body {
+    background: white;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    zoom: 0.9;
+  }
+  
+}

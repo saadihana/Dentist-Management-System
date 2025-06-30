@@ -1,0 +1,14 @@
+#search-section{
+    display:flex;
+    /* height: 5vh; */
+    align-items: center;
+    margin: 1vh 3vw;
+}
+
+#search{
+    width: 30vw;
+    margin: auto 0.5vw;
+}
+.user{
+    margin: auto 10vw;
+}

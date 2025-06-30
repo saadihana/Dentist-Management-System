@@ -1,0 +1,237 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timetable-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+/* Today's column highlighting */
+.today-column {
+  background-color: #e6f2ff !important; /* Light blue background */
+   /* Blue border */
+  position: relative;
+}
+
+.today-header {
+  background-color: #4597f5 !important; /* Blue background for header */
+  color: white !important; /* White text */
+  font-weight: bold !important;
+  position: relative;
+}
+
+.today-header::after {
+  content: "Aujourd'hui"; /* 'Today' in French */
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c01515;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+
+/* Regular table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-top: 40px;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Slot styling */
+.empty-slot {
+  background-color: #e6f2ff;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.highlighted-cell {
+  background-color: #1976d2;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.highlighted-cell:hover {
+  background-color: #1565c0;
+}
+.today-column.highlighted-cell {
+  background-color: #c01515 !important; /* Blue background */
+  border: 2px solid #aa0606 !important; /* Blue border */
+}
+
+table td:hover {
+  background-color: #ddd;
+}
+
+/* Week navigation */
+.week-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.week-navigation button {
+  background-color: #4e95f8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.week-navigation button:hover {
+  background-color: #1c75f2;
+}
+
+/* Controls section */
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.controls label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.controls input, .controls select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.controls select {
+  height: 45px;
+}
+
+/* Popup form styling */
+.popup-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-form-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popup-form-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.popup-form-close:hover {
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-row input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.form-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-actions button:first-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.form-actions button:first-child:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.cancel-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #d5d5d5;
+}
+

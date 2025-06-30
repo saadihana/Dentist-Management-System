@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+    border-radius: 8px;
+    border: 4px black;
+    padding: 0.5vh 0.2vw;
+    /* width: 13vw; */
+    position: relative;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 1vh 0.8vw;
+    /* height: 17vh; */
+    color: aliceblue;
+}
+
+#icon{
+    /* position: absolute; */
+    
+}

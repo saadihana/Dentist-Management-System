@@ -1,0 +1,26 @@
+#day-count{
+    background-color: white;
+    max-width: 30%;
+    min-width: 15%;
+    color: #0099FF;
+    font-size: large;
+    /* position: f; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 2vh 2vw;
+    border: rgb(168, 168, 168) 1px solid;
+}
+
+#day-count span p:nth-child(2n+1){
+    text-align: left;
+    font-weight: 600;
+    margin: 0;
+}
+#day-count span p:nth-child(2n){
+    /* text-align: left; */
+    margin: 0;
+    color: black;
+    font-weight: 600;
+}
