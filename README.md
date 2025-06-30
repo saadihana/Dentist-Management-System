@@ -109,11 +109,6 @@ reduced administrative burden, and adherence to healthcare regulations.
 
 ---
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
 ## Contributors
 - **LATRECHE Dhikra Maram**
 - **SAADI Hana**
