@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+Header {
+  /* background-color: #1047b5;
+  color: white; */
+  display: flex;
+  justify-content: flex-start;
+  
+  
+}
+.selected {
+  background-color: lightblue; 
+}
+.Title{
+  color: #0056b3;
+  text-align: start;
+  display: inline-block;
+  vertical-align: middle;
+  /* justify-content: start; */
+}
+.header-img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.Search-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  margin-top: 20px;
+ 
+}
+.Search-row1{
+  display: flex;
+  margin-right: 300px;
+ 
+  
+}
+.IDbutton{
+  background-color: rgb(244, 235, 235);
+  height:100%;
+  width:100%;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color:black
+  
+  
+}
+/* .Search{
+  width: 500px;
+  border-radius: 10px;
+  border:solid 1px grey;
+  
+} */
+ button{
+  margin-right: 10px;
+  background-color: #0056b3;
+  padding: 7px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+ 
+  
+}
+button:active {
+  color: white; /* Change text color to white */
+  background-color: #c5c8c8; /* Optionally change background color when clicked */
+}
+.delete{
+  background-color: red;
+}
+.delete :active {
+  color: white; 
+  background-color: #b30003; 
+}
+.searchicon{
+  /* background-color: red;  */
+  color: white; 
+  border: none; 
+  border-radius: 50%; 
+  padding: 5px; 
+  margin: 5px;
+  width: auto; 
+  height: auto; 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer; 
+
+}
+
+.searchicon:active {
+  color: white; 
+  background-color: #014c9c; 
+}
