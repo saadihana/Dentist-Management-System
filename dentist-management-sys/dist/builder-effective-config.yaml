@@ -1,0 +1,9 @@
+directories:
+  output: dist
+  buildResources: assets
+appId: com.your.app
+files:
+  - filter:
+      - build//*
+      - electron//*
+electronVersion: 33.3.1
