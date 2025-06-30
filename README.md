@@ -54,7 +54,7 @@ reduced administrative burden, and adherence to healthcare regulations.
 ### Steps to Set Up the Project Locally
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Moussx0/dentist_management_system.git
+   git clone https://github.com/saadihana/Dentist-Management-System.git
    cd dentist-management-system
    ```
 
