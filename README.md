@@ -6,8 +6,7 @@
 3. [Technologies Used](#technologies-used)
 4. [Installation and Setup](#installation-and-setup)
 5. [Usage](#usage)
-6. [License](#license)
-7. [Contributors](#contributors)
+6. [Contributors](#contributors)
 
 ---
 
